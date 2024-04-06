@@ -15,7 +15,7 @@ const frameMetadata = getFrameMetadata({
 	input: {
 		text: "your birth year...",
 	},
-	post_url: `${NEXT_PUBLIC_URL}/api`,
+	post_url: `${NEXT_PUBLIC_URL}/api/zodiac`,
 });
 
 export const metadata: Metadata = {
