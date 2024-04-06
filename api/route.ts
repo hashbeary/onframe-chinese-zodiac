@@ -14,7 +14,20 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 	});
 
 	const author_guard = message?.raw.action.cast.author.username === "hash0x";
-	if (!author_guard) return new NextResponse();
+	if (!author_guard)
+		return new NextResponse(
+			getFrameHtmlResponse({
+				buttons: [
+					{
+						label: "don't steal frames",
+					},
+				],
+				image: {
+					src: "https://thumbs.dreamstime.com/b/emoticon-stop-sign-vector-illustration-53889490.jpg",
+					aspectRatio: "1:1",
+				},
+			})
+		);
 
 	// Verif
 
