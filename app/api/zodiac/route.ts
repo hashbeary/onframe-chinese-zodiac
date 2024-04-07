@@ -20,16 +20,17 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 		getFrameHtmlResponse({
 			buttons: [
 				{
-					label: `you are ${user_zodiac.animal === "ox" ? "an" : "a"} ${
+					label: `you are ${user_zodiac.animal.includes("ox") ? "an" : "a"} ${
 						user_zodiac.animal
-					}!`,
+					}`,
+					action: "post_redirect",
 				},
 			],
 			image: {
 				src: user_zodiac.img_src,
 				aspectRatio: "1:1",
 			},
-			post_url: `${NEXT_PUBLIC_URL}/api/back`,
+			postUrl: NEXT_PUBLIC_URL,
 		})
 	);
 }

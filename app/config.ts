@@ -1,51 +1,51 @@
 export const NEXT_PUBLIC_URL = "https://onframe-chinese-zodiac.vercel.app";
 export const CHINESE_ZODIAC = [
 	{
-		animal: "monkey",
+		animal: "🐒 monkey 🐒",
 		img_src: "https://www.rd.com/wp-content/uploads/2020/11/Monkey.jpg",
 	},
 	{
-		animal: "rooster",
+		animal: "🐓 rooster 🐓",
 		img_src: "https://www.rd.com/wp-content/uploads/2020/11/Rooster.jpg",
 	},
 	{
-		animal: "dog",
+		animal: "🐶 dog 🐶",
 		img_src: "https://www.rd.com/wp-content/uploads/2020/11/Dog.jpg",
 	},
 	{
-		animal: "pig",
+		animal: "🐽 pig 🐽",
 		img_src: "https://www.rd.com/wp-content/uploads/2020/11/Pig.jpg",
 	},
 	{
-		animal: "rat",
+		animal: "🐀 rat 🐀",
 		img_src: "https://www.rd.com/wp-content/uploads/2020/11/Rat.jpg",
 	},
 	{
-		animal: "ox",
+		animal: "🐂 ox 🐂",
 		img_src: "https://www.rd.com/wp-content/uploads/2020/11/Ox.jpg",
 	},
 	{
-		animal: "tiger",
+		animal: "🐯 tiger 🐯",
 		img_src: "https://www.rd.com/wp-content/uploads/2020/11/Tiger.jpg",
 	},
 	{
-		animal: "rabbit",
+		animal: "🐰 rabbit 🐰",
 		img_src: "https://www.rd.com/wp-content/uploads/2020/11/Rabbit.jpg",
 	},
 	{
-		animal: "dragon",
+		animal: "🐲 dragon 🐲",
 		img_src: "https://www.rd.com/wp-content/uploads/2020/11/Dragon.jpg",
 	},
 	{
-		animal: "snake",
+		animal: "🐍 snake 🐍",
 		img_src: "https://www.rd.com/wp-content/uploads/2020/11/Snake.jpg",
 	},
 	{
-		animal: "horse",
+		animal: "🐴 horse 🐴",
 		img_src: "https://www.rd.com/wp-content/uploads/2020/11/Horse.jpg",
 	},
 	{
-		animal: "goat",
+		animal: "🐐 goat 🐐",
 		img_src: "https://www.rd.com/wp-content/uploads/2020/11/Goat.jpg",
 	},
 ];
