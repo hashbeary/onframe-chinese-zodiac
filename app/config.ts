@@ -2,11 +2,11 @@ export const NEXT_PUBLIC_URL = "https://onframe-chinese-zodiac.vercel.app";
 export const CHINESE_ZODIAC = [
 	{
 		animal: "🐒 monkey 🐒",
-		img_src: "https://www.rd.com/wp-content/uploads/2020/11/Monkey.jpg",
+		img_src: "/monkey.jpeg",
 	},
 	{
 		animal: "🐓 rooster 🐓",
-		img_src: "https://www.rd.com/wp-content/uploads/2020/11/Rooster.jpg",
+		img_src: "/rooster.jpeg",
 	},
 	{
 		animal: "🐶 dog 🐶",

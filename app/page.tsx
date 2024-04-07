@@ -9,7 +9,7 @@ const frameMetadata = getFrameMetadata({
 		},
 	],
 	image: {
-		src: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/20100720_Fukuoka_Kushida_3614_M.jpg/640px-20100720_Fukuoka_Kushida_3614_M.jpg`,
+		src: `${NEXT_PUBLIC_URL}/init.jpeg`,
 		aspectRatio: "1:1",
 	},
 	input: {
@@ -24,9 +24,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "Chinese Zodiac on the best Web3 Social Network",
 		description: "Chinese Zodiac on the best Web3 Social Network",
-		images: [
-			`https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/20100720_Fukuoka_Kushida_3614_M.jpg/640px-20100720_Fukuoka_Kushida_3614_M.jpg`,
-		],
+		images: [`${NEXT_PUBLIC_URL}/init.jpeg`],
 	},
 	other: {
 		...frameMetadata,
