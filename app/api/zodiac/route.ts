@@ -1,4 +1,4 @@
-import { CHINESE_ZODIAC } from "@/app/config";
+import { CHINESE_ZODIAC, NEXT_PUBLIC_URL } from "@/app/config";
 import {
 	FrameRequest,
 	getFrameHtmlResponse,
@@ -29,6 +29,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 				src: user_zodiac.img_src,
 				aspectRatio: "1:1",
 			},
+			post_url: `${NEXT_PUBLIC_URL}/api/back`,
 		})
 	);
 }
