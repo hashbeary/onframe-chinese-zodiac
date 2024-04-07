@@ -1,4 +1,4 @@
-import { CHINESE_ZODIAC, NEXT_PUBLIC_URL } from "@/app/config";
+import { CHINESE_ZODIAC } from "@/app/config";
 import {
 	FrameRequest,
 	getFrameHtmlResponse,
@@ -12,23 +12,6 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 	const { message } = await getFrameMessage(body, {
 		neynarApiKey: "NEYNAR_ONCHAIN_KIT",
 	});
-
-	const author_guard = message?.raw.action.cast.author.username;
-	if (author_guard && !(author_guard === "hash0x"))
-		return new NextResponse(
-			getFrameHtmlResponse({
-				buttons: [
-					{
-						label: "don't steal frames",
-					},
-				],
-				image: {
-					src: "https://thumbs.dreamstime.com/b/emoticon-stop-sign-vector-illustration-53889490.jpg",
-					aspectRatio: "1:1",
-				},
-				post_url: NEXT_PUBLIC_URL,
-			})
-		);
 
 	const year = +message!.input;
 	const user_zodiac = CHINESE_ZODIAC[year % 12];
