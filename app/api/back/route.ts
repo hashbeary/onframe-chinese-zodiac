@@ -11,7 +11,7 @@ export async function POST(): Promise<NextResponse> {
 				},
 			],
 			image: {
-				src: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/20100720_Fukuoka_Kushida_3614_M.jpg/640px-20100720_Fukuoka_Kushida_3614_M.jpg`,
+				src: `${NEXT_PUBLIC_URL}/init.jpeg`,
 				aspectRatio: "1:1",
 			},
 			input: {

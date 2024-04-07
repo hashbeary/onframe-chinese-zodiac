@@ -26,7 +26,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 				},
 			],
 			image: {
-				src: user_zodiac.img_src,
+				src: `${NEXT_PUBLIC_URL}/animals/${user_zodiac.img_src}`,
 				aspectRatio: "1:1",
 			},
 			post_url: `${NEXT_PUBLIC_URL}/api/back`,
